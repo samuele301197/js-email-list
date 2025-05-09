@@ -7,6 +7,6 @@ axios
   .get("https://flynn.boolean.careers/exercises/api/random/mail")
   .then((resp) => {
     const mail = resp.data.response;
-emailsElem.innerHTML += `<li>${mail}</li>`;    
+emailsElem.innerHTML += `<li class="list-group-item">${mail}</li>`;    
   });
 }
